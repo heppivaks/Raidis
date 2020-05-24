@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "467122314392",
+    "firebase_url": "https://raidis-5117e.firebaseio.com",
+    "project_id": "raidis-5117e",
+    "storage_bucket": "raidis-5117e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467122314392:android:5e27c97b02c633b979c4ed",
+        "android_client_info": {
+          "package_name": "com.example.raidis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467122314392-09uenimpkscm9n018kilt3c6025lk3eg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.raidis",
+            "certificate_hash": "b0a0ef5b123ff810379350d3dc3f3733946d49a6"
+          }
+        },
+        {
+          "client_id": "467122314392-irkrfuro03f813vlvj91sllhpgnd5e2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0uGjqirioANH7oKIH541ar8qLe4GYcgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467122314392-irkrfuro03f813vlvj91sllhpgnd5e2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

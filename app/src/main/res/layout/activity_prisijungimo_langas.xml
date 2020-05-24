@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Prisijungimas.PrisijungimoLangas">
+
+    <ImageView
+        android:id="@+id/piestukoFt"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/automobile" />
+
+    <TextView
+        android:id="@+id/prisijungimas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="@string/prisijungimas"
+        android:layout_below="@id/piestukoFt"
+        android:textColor="#C91F316D"
+        android:textSize="18sp"
+        app:fontFamily="@font/raleway_bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/prisijungimas"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/envelope_ion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="25"
+            app:srcCompat="@drawable/envelope" />
+
+        <EditText
+            android:id="@+id/email_laukas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:background="@color/lightGray"
+            android:ems="10"
+            android:hint="@string/ivedimasElP"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwordRepeat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/key_ion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="25"
+            app:srcCompat="@drawable/key" />
+
+        <EditText
+            android:id="@+id/password_laukas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:background="@color/lightGray"
+            android:ems="10"
+            android:hint="@string/ivedimasSlap"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/prisijungimoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C91F316D"
+        android:text="@string/jungtis"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/registraijaLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="@string/registracija"
+                android:layout_below="@id/prisijungimoBtn"
+                android:textColor="#C91F316D"
+                android:textSize="18sp"
+                app:fontFamily="@font/raleway_bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/keliones_inout"
+    android:layout_marginBottom="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_trip"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="5sp"
+        android:src="@drawable/dog"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/kelione_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/profile_image_trip"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="@string/Kaunas"
+        android:textColor="#555555"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/kelione_rodykle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_toEndOf="@id/kelione_from"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="-"
+        android:textColor="#555555"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/kelione_dest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/kelione_rodykle"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="@string/Klaipeda"
+        android:textColor="#555555"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/kelione_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/kelione_dest"
+        android:text="04-15"
+        android:textSize="10sp"
+        android:textColor="#777777" />
+
+    <TextView
+        android:id="@+id/kelione_laikas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@id/kelione_data"
+        android:text="18:00"
+        android:textSize="10sp"
+        android:textColor="#777777" />
+
+
+    <TextView
+     android:id="@+id/kelione_vietuSk"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="false"
+    android:layout_marginLeft="20dp"
+    android:layout_below="@id/kelione_from"
+    android:layout_marginTop="8dp"
+    android:layout_toEndOf="@id/profile_image_trip"
+    android:text=""
+    android:textColor="#999999" />
+
+    <TextView
+        android:id="@+id/kelione_vietuSkZodis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_marginLeft="3dp"
+        android:layout_below="@id/kelione_from"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/kelione_vietuSk"
+        android:text="laisvos vietos"
+        android:textColor="#999999" />
+
+    <ImageView
+        android:id="@+id/keliones_keitimas"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_message" />
+
+</RelativeLayout>

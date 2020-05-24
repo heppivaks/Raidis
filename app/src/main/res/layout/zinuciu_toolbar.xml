@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorMain"
+    android:elevation="20dp"
+    android:id="@+id/messagetoolbar">
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btn_back"
+        android:background="@drawable/ic_bak_name"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/lightGray"
+        android:layout_alignParentRight="true"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_msg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="5sp"
+        android:src="@drawable/dog"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/zinutes_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:paddingLeft="25dp"
+        android:textColor="#999999"
+        android:textSize="18sp" />
+
+</androidx.appcompat.widget.Toolbar>

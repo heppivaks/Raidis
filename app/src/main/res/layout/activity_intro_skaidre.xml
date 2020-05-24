@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#C91F316D"
+    android:orientation="vertical"
+    tools:context=".Intro.IntroSkaidre">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/apaia_intro"/>
+
+   <RelativeLayout
+       android:id="@+id/apaia_intro"
+       android:layout_width="match_parent"
+       android:layout_height="56dp"
+       android:layout_alignParentBottom="true">
+
+       <LinearLayout
+           android:id="@+id/bottomView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="180dp"
+           android:orientation="horizontal"
+           android:padding="20dp"></LinearLayout>
+
+    <Button
+        android:id="@+id/prevBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        android:text="@string/intro_atgal"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        android:text="@string/intro_pirmyn" />
+
+       <Button
+           android:id="@+id/jungtisBtn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+           android:background="@android:color/transparent"
+           android:text="@string/intro_jungtis"
+           android:visibility="invisible" />
+   </RelativeLayout>
+
+</RelativeLayout>

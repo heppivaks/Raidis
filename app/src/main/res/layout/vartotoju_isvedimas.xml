@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/profile_image_pranesimai"
+        android:src="@drawable/dog"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_toRightOf="@id/profile_image_pranesimai"
+        android:layout_toEndOf="@id/profile_image_pranesimai"
+        android:layout_marginLeft="10dp"
+        android:text="dadsadassad"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_toRightOf="@id/profile_image_pranesimai"
+        android:layout_marginTop="4dp"
+        android:id="@+id/last_msg"
+        android:maxLines="1"
+        android:textColor="#999999"
+        android:layout_marginLeft="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/lightGray"
+        android:layout_below="@id/profile_image_pranesimai"/>
+
+</RelativeLayout>
