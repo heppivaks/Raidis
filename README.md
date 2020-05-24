@@ -1,0 +1,1 @@
+Išmaniųjų įrenginių programavimo moduliui sukurta programėlė
